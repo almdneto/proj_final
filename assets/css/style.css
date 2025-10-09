@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: arial;
+}
+
+#cabecalho {
+    display: flex;
+    background-color: #0b0f14;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logotipo {
+    height: 7rem;
+}
+
+#navbar-links {
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0 2rem;
+}
+
