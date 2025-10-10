@@ -22,3 +22,35 @@ body {
     padding: 0 2rem;
 }
 
+#hamburguer-mn {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    #hamburguer-mn {
+        display: block;
+    }
+
+    #navbar-links {
+    display: none; 
+    flex-direction: column; 
+    background-color: #0b0f14;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    }
+
+    #navbar-links.active {
+        display: flex;
+    }
+}
+
+
+
