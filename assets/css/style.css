@@ -24,12 +24,36 @@ body {
 
 #hamburguer-mn {
     display: none;
-    font-size: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
     background: none;
     border: none;
-    color: white;
+    padding: 0;
     cursor: pointer;
 }
+
+#hamburguer-mn .linha {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    transition: transform 0.3s ease, ocapacity 0.2 ease ;
+    transform-origin: center;
+}
+
+#hamburguer-mn.ativo .linha:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#hamburguer-mn.ativo .linha:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+#hamburguer-mn.ativo .linha:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 
 @media (max-width:768px) {
     #hamburguer-mn {
@@ -38,8 +62,9 @@ body {
 
     #navbar-links {
     display: none; 
-    flex-direction: column; 
-    background-color: #0b0f14;
+    flex-direction: column;
+    color: #0b0f14; 
+    background-color: #fff;
     position: absolute;
     top: 70px;
     right: 0;
