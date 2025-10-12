@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />     <!-- botões -->
 </head>
 <body>
     <header id="cabecalho">
 
         <img src="./assets/img/logo.svg" alt="logo" id="logotipo">
 
-        <button id="hamburguer-mn">
-            <span class="linha"></span>
-            <span class="linha"></span>
-            <span class="linha"></span>
-        </button>
-
         <nav id="navbar">
-            <ul id="navbar-links">
+            <ul id="navbar-links">        <!-- não finalizado -->
                 <li class="navbar-links-itens">sobre nós</li>
                 <li class="navbar-links-itens">contatos</li>
                 <li class="navbar-links-itens">início</li>
+                <li class="navbar-links-itens-login"><a href="#" id="login">Login</a></li>     <!-- tem classe diferente pra cor dos outros elementos não interferir -->
             </ul>
         </nav>
+
+        <i class="fa-solid fa-bars" id="hamb-btt"></i>      <!-- menu mobile -->
     </header>
+
+    <main>
+        <a class="container" href="#">
+            <img src="./assets/img/ramon_dino_mrolimpya.jpeg" alt="Ramon Dino" class="img-main">
+            <a href="https://www.folhabv.com.br/esporte/ramon-dino-faz-historia-e-conquista-o-titulo-do-classic-physique-no-mr-olympia/" class="linkimagem">créditos imagem</a>
+
+            <h2 class="titulo-manchete">veja agora!</h2>
+
+            <p class="manchete">ramon dino ganha a classic physique do mr. olympia...</p>
+        </a>
+    </main>
 
     <script src="/assets/js/script.js"></script>
 

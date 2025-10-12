@@ -1,10 +1,15 @@
-const menuBtn = document.getElementById('hamburguer-mn');
-const navLinks = document.getElementById('navbar-links');
+const botao = document.querySelector("#hamb-btt");
+const menu = document.querySelector("#navbar-links");
 
-menuBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  menuBtn.classList.toggle('ativo');
+botao.addEventListener('click', (e) => {
+  e.stopImmediatePropagation();
+  menu.classList.toggle("active");
+  botao.classList.toggle('open');
+});
 
-  const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
-  menuBtn.setAttribute('aria-expanded', String(!expanded));
+document.addEventListener('click', (e) => {
+  if (menu.classList.contains('active') && !menu.contains(e.target) && e.target !== botao) {
+    menu.classList.remove('active');
+    botao.classList.remove('open')
+  }
 });
