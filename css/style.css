@@ -45,6 +45,7 @@ main {
     text-align: center;
 }
 
+/* SOBRE NÓS */
 #sobrenos {
     display: inline-block;
     transition: transform 0.5s ease, background-color 0.5s ease;
@@ -55,9 +56,11 @@ main {
     background-color: #dbdbdb;
 }
 
+/* CONTATOS */
 #cont {
     display: inline-block;
     transition: transform 0.5s ease, background-color 0.5s ease;
+    cursor: pointer;
 }
 
 #cont:hover {
@@ -65,6 +68,53 @@ main {
     background-color: #dbdbdb;
 }
 
+#cont-item {
+    position: relative;
+}
+
+#navcont {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 90px;
+    right: 245px;
+    background-color: #0b0f14;
+    border-radius: 10px;
+    width: 150px;    
+    padding: 10px 15px;
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#navcont.ativo {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+#navcont-links {
+    list-style: none;
+    padding: 0;
+}
+
+.navcont-links-itens {
+    display: flex;
+    color: white;
+    align-items: center;
+    border: 3px solid white;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 5px 15px;
+}
+
+.navcont-links-itens p {
+    margin: 0;
+}
+
+
+/* INÍCIO */
 #inicio {
     display: inline-block;
     transition: transform 0.5s ease, background-color 0.5s ease;
@@ -75,6 +125,7 @@ main {
     background-color: #dbdbdb;
 }
 
+/* LOGIN */
 #login {
     text-decoration: none;
     background-color: #e64747;
@@ -90,6 +141,7 @@ main {
     background-color: rgb(255, 26, 26);
 }
 
+/* MENU RESPONSIVO */
 #hamb-btt {
     color: white;
     font-size: 1.5rem;
@@ -131,7 +183,11 @@ main {
     #hamb-btt.open {
         transform: rotate(-90deg);
     }
-
+    
+    #navcont {
+    top: 150px;
+    right: 269px;
+    }
 }
 
 /* ESTILOS CONTAINERS */
@@ -142,6 +198,7 @@ main {
     gap: 20px;
     border-radius: 10px;
     padding: 10px 30px;
+    margin-bottom: 100px;
     align-items: center;
     justify-content: center;
     background-color: white;

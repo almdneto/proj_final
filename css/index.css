@@ -1,10 +1,9 @@
 /* ESTILOS MAIN */
 .container {
     text-decoration: none;
-    margin-bottom: 100px;
 }
 
-.container h2 , p {
+.container h2 , .container p {
     margin: 0;
     padding: 0;
 }
