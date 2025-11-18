@@ -1,0 +1,24 @@
+h1, h2 {
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 25px;
+}
+
+#paragrafo1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#paragrafo1 img {
+  grid-column: 2;
+}
+
+#paragrafo1 p {
+  grid-column: 1;
+}
+
+#paragrafo1 img {
+  height: 100px;
+}
