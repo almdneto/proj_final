@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/login_cadastro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />     <!-- botões -->
@@ -18,7 +18,7 @@
             <ul id="navbar-links">        
                 <li ><a href="./pages/sobreNos.html" class="navbar-links-itens" id="sobrenos">sobre nós</a></li>
                 <li class="navbar-links-itens" id="cont">contatos</li>
-                <li class="navbar-links-itens-login"><a href="./cadastro.html" id="login">cadastro</a></li>     <!-- tem classe diferente pra cor dos outros elementos não interferir -->
+                <li class="navbar-links-itens-login"><a href="./login.html" id="login">login</a></li>     <!-- tem classe diferente pra cor dos outros elementos não interferir -->
             </ul>
         </nav>
         <nav id="navcont">
@@ -36,22 +36,27 @@
         <i class="fa-solid fa-bars" id="hamb-btt"></i>      <!-- menu mobile -->
     </header>
 
-        <form id="log-in" action="../index.html">
+        <form id="log-in">
             <h2>Login</h2>
             
             <div class="texto">
-                <input type="text" id="usuario" required>
+                <input type="text" required>
                 <label>Usuário</label>
             </div>
             
             <div class="texto">
-                <input type="password" id="senha" required>
+                <input type="password" required>
                 <label>Senha</label>
             </div>
+            
+            <div class="texto">
+                <input type="password" required>
+                <label>Confirme Sua Senha</label>
+            </div>
+            
+            <a href="./login.html" id="cadastro">Já possui uma conta?</a>
 
-            <a href="./cadastro.html" id="cadastro">Não possui uma conta ainda?</a>
-
-            <button id="btn" type="submit">entrar</button>
+            <button type="submit" id="btn">cadastrar</button>
         </form>
 
 </body>
